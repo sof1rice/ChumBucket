@@ -46,7 +46,7 @@ const dummyName = "dummyName"
 
 const sendQueryToServer = (code) =>
 {
-  return resource('POST', 'analysis/submit', { dummyURI,dummyName,code })
+  return resource('POST', 'analysis/submit', { uri: dummyURI, name: dummyName, code })
 }
 
 const getJobStatusFromServer = (jobURI) =>
